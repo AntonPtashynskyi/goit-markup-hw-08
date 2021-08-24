@@ -1,0 +1,37 @@
+.contact-header {
+  @extend %list;
+  @extend %contact;
+
+  display: flex;
+  margin-left: auto;
+
+  &__link {
+    display: flex;
+    align-items: center;
+
+    padding-top: 32px;
+    padding-bottom: 32px;
+
+    color: $primery-text-color;
+    text-decoration: none;
+    font-style: normal;
+
+    transition: color 250ms $main-transition-time;
+  }
+
+  &__icon {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+}
+
+.contact-header__item:last-child {
+  margin-left: 50px;
+}
+
+.contact-header__link {
+  &:hover,
+  &:focus {
+    color: $accent-text-color;
+  }
+}

@@ -1,0 +1,11 @@
+.logo {
+  @extend %logo;
+
+  display: block;
+  color: $tittle-text-color;
+  margin-right: 93px;
+
+  &--accent {
+    color: $accent-text-color;
+  }
+}

@@ -1,0 +1,74 @@
+%logo {
+  font-family: $secondary-font;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+}
+
+%list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+%container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  outline: 0px solid tomato;
+}
+
+%section {
+  padding-top: 94px;
+  padding-bottom: 0;
+}
+
+%contact {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+%footer-tittle {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $white-text-color;
+  margin-top: 0;
+
+  margin-bottom: 20px;
+}
+
+%action-btn {
+  background-color: $main-button-color;
+  color: $white-text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  height: 50px;
+
+  margin: 0 auto 0 auto;
+
+  font-family: $main-font;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+
+  cursor: pointer;
+  border-style: none;
+  border: none;
+  display: block;
+
+  transition: background-color 250ms $main-transition-time,
+    box-shadow 250ms $main-transition-time;
+}

@@ -1,0 +1,8 @@
+.send-btn {
+  @extend %action-btn;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-button-color;
+  }
+}
