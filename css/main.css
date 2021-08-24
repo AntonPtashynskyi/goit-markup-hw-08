@@ -273,7 +273,7 @@ summary {
   font-family: Raleway, sans-serif;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
+  font-size: 24px;
   line-height: 1.19;
 }
 
@@ -286,14 +286,14 @@ summary {
 .main-nav, .footer-container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 0px solid tomato;
 }
 
-.features, .about-us, .footer {
-  padding-top: 94px;
+.features, .about-us {
+  padding-top: 60px;
   padding-bottom: 0;
 }
 
@@ -354,41 +354,41 @@ summary {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 0px solid tomato;
 }
 
-.section {
-  padding: 94px 0;
-}
-
 .section-tittle {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
+  font-size: 14px;
   line-height: 1.16;
   text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 }
 
-.page-header {
-  border-bottom: 1px solid #ececec;
+.main-section-tittle {
+  color: #212121;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.17;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
 }
 
 .main-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  height: 60px;
+  position: relative;
 }
 
-.site-nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+@media screen and (max-width: 767px) {
+  .site-nav {
+    display: none;
+  }
 }
 
 .site-nav__link {
@@ -435,6 +435,9 @@ summary {
 }
 
 .logo {
+  position: relative;
+  top: 16px;
+  left: 0px;
   display: block;
   color: #212121;
   margin-right: 93px;
@@ -449,6 +452,12 @@ summary {
   display: -ms-flexbox;
   display: flex;
   margin-left: auto;
+}
+
+@media screen and (max-width: 767px) {
+  .contact-header {
+    display: none;
+  }
 }
 
 .contact-header__link {
@@ -486,9 +495,9 @@ summary {
 }
 
 .main-section {
-  padding: 200px 0;
-  max-width: 1600px;
-  height: 600px;
+  padding: 118px 0;
+  width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./../images/hero-bg.jpg);
@@ -496,16 +505,17 @@ summary {
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  background-size: cover;
 }
 
 .main-section__text {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   margin-top: 0;
@@ -522,18 +532,8 @@ summary {
           box-shadow: none;
 }
 
-.features-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.features-list__item {
-  width: calc((100% - 90px) / 4);
-}
-
-.features-list__item:not(:last-child) {
-  margin-right: 30px;
+.features {
+  padding-bottom: 60px;
 }
 
 .features-list__tittle {
@@ -542,6 +542,7 @@ summary {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+  text-align: center;
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -569,21 +570,17 @@ summary {
 }
 
 .features-list__text {
-  margin: 0 0 10px 0;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-us {
+    display: none;
+  }
 }
 
 .about-us-section {
   padding-bottom: 94px;
-}
-
-.about-us__tittle {
-  color: #212121;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
-  text-align: center;
-  margin-top: 0;
-  margin-bottom: 50px;
 }
 
 .about-us-list {
@@ -640,35 +637,31 @@ summary {
   margin-right: 30px;
 }
 
-.team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+.team-section__container {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #f5f4fa;
 }
 
 .team-section__tittle {
   color: #212121;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
   text-align: center;
   margin-top: 0;
-  margin-bottom: 50px;
-}
-
-.team-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  margin-bottom: 30px;
 }
 
 .team-list__card {
+  width: auto;
+  height: 622px;
   background-color: #ffffff;
   text-align: center;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  width: calc((100% - 90px) / 4);
+  margin-bottom: 30px;
 }
 
 .team-list__name {
@@ -680,18 +673,13 @@ summary {
 }
 
 .team-list__desc {
-  padding: 30px 32px;
+  padding-top: 30px;
 }
 
 .team-list__position, .team-list__image {
   margin: 0;
   display: block;
   line-height: 1.9;
-  margin-bottom: 16px;
-}
-
-.team-list__card:not(:last-child) {
-  margin-right: 30px;
 }
 
 .team-social-list {
@@ -700,7 +688,7 @@ summary {
   display: flex;
   width: 206px;
   height: 44px;
-  margin: 0;
+  margin: 16px auto 0 auto;
   padding: 0;
 }
 
@@ -735,21 +723,28 @@ summary {
   margin-right: 10px;
 }
 
+.customers {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
 .customers__tittle {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 
 .customers-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .customers-list__unit {
   -ms-grid-column-align: center;
       justify-self: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
 
@@ -763,7 +758,7 @@ summary {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -783,24 +778,31 @@ summary {
   fill: currentColor;
 }
 
-.customers-list__unit:not(:last-child) {
+.customers-list__unit:nth-child(2n + 1) {
   margin-right: 30px;
+  margin-bottom: 30px;
 }
 
-.footer {
-  background-color: #2f303a;
-  padding-top: 60px;
-  padding-bottom: 60px;
-  height: 252px;
+.customers-list__unit:nth-child(5) {
+  margin-bottom: 0px;
 }
 
 .footer-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  background-color: #2f303a;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .logo-footer {
@@ -811,6 +813,20 @@ summary {
 
 .logo-footer--accent {
   color: #2196f3;
+}
+
+.contact-block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 60px;
 }
 
 .adress {
@@ -827,6 +843,7 @@ summary {
 .company-contacts {
   display: block;
   padding: 0;
+  margin: 0;
 }
 
 .company-contacts__link {
@@ -852,7 +869,8 @@ summary {
 }
 
 .social-block {
-  margin-left: 70px;
+  text-align: center;
+  margin-bottom: 60px;
 }
 
 .company-links {
@@ -901,22 +919,36 @@ summary {
 }
 
 .subscribe-block {
-  margin-left: 93px;
-  margin-right: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .subscribe-form {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .subscribe-form__mail-input {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.25;
   padding: 15px 0 15px 16px;
   color: rgba(255, 255, 255, 0.6);
-  width: 358px;
+  width: 100%;
   height: 50px;
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -935,7 +967,6 @@ summary {
   color: #ffffff;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-  margin-left: 12px;
   padding: 10px 28px;
   min-width: 200px;
   height: 50px;

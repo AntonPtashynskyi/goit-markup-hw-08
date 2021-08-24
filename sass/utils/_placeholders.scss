@@ -2,7 +2,8 @@
   font-family: $secondary-font;
   text-decoration: none;
   font-weight: 700;
-  font-size: 26px;
+  // font-size: 26px; Desctop fonr-size
+  font-size: 24px;
   line-height: 1.19;
 }
 
@@ -15,14 +16,15 @@
 %container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
+  // width: 1200px;
+  width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 0px solid tomato;
 }
 
 %section {
-  padding-top: 94px;
+  padding-top: 60px;
   padding-bottom: 0;
 }
 

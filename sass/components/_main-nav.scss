@@ -1,12 +1,21 @@
 .main-nav {
   @extend %container;
-  display: flex;
-  align-items: center;
+  height: 60px;
+  position: relative;
+  // display: flex;
+  // align-items: center;
+}
+
+// Media rules
+.site-nav {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
 
 .site-nav {
   @extend %list;
-  display: flex;
+  // display: flex;
 
   &__link {
     display: block;

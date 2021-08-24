@@ -4,9 +4,10 @@
 }
 
 .main-section {
-  padding: 200px 0;
-  max-width: 1600px;
-  height: 600px;
+  padding: 118px 0;
+  // max-width: 1600px;
+  width: 480px;
+  height: 400px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -18,18 +19,19 @@
   background-position: center;
   background-repeat: no-repeat;
   text-align: center;
+  background-size: cover;
 }
 
 .main-section__text {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
 
   color: $white-text-color;
 
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.62;
 
   letter-spacing: 0.06em;
   text-transform: uppercase;

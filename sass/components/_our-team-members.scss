@@ -1,26 +1,32 @@
 .team-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  background-color: $bg-our-team-section;
+  &__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    background-color: $bg-our-team-section;
+  }
 
   &__tittle {
     color: $tittle-text-color;
 
     font-weight: 700;
-    font-size: 36px;
-    line-height: 1.16;
+    font-size: 28px;
+    line-height: 1.17;
     text-align: center;
 
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 }
 
 .team-list {
   @extend %list;
-  display: flex;
+
+  // display: flex;
 
   &__card {
+    width: auto;
+    height: 622px;
     background-color: $white-text-color;
     text-align: center;
 
@@ -28,7 +34,8 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    width: calc((100% - 90px) / 4);
+    // width: calc((100% - 90px) / 4);
+    margin-bottom: 30px;
   }
 
   &__name {
@@ -41,7 +48,7 @@
   }
 
   &__desc {
-    padding: 30px 32px;
+    padding-top: 30px;
   }
 
   &__position,
@@ -49,10 +56,9 @@
     margin: 0;
     display: block;
     line-height: 1.9;
-    margin-bottom: 16px;
   }
 }
 
-.team-list__card:not(:last-child) {
-  margin-right: 30px;
-}
+// .team-list__card:not(:last-child) {
+//   margin-right: 30px;
+// }

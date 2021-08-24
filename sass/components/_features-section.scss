@@ -1,18 +1,20 @@
 .features {
   @extend %section;
+  padding-bottom: 60px;
 }
 
 .features-list {
   @extend %list;
-  display: flex;
 
-  &__item {
-    width: calc((100% - 90px) / 4);
-  }
+  // display: flex;
 
-  &__item:not(:last-child) {
-    margin-right: 30px;
-  }
+  // &__item {
+  //   width: calc((100% - 90px) / 4);
+  // }
+
+  // &__item:not(:last-child) {
+  //   margin-right: 30px;
+  // }
 
   &__tittle {
     color: $tittle-text-color;
@@ -21,6 +23,7 @@
     font-size: 14px;
     line-height: 1.14;
     text-transform: uppercase;
+    text-align: center;
     margin-top: 0;
     margin-bottom: 10px;
   }
@@ -43,6 +46,6 @@
   }
 
   &__text {
-    margin: 0 0 10px 0;
+    margin-bottom: 30px;
   }
 }
