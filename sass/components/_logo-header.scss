@@ -1,13 +1,10 @@
 .logo {
   @extend %logo;
 
-  position: relative;
-  top: 16px;
-  left: 0px;
-
   display: block;
   color: $tittle-text-color;
-  margin-right: 93px;
+  // margin-right: 93px;
+  margin-right: auto;
 
   &--accent {
     color: $accent-text-color;
