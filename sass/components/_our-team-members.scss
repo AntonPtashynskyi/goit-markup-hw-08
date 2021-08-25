@@ -26,7 +26,6 @@
 
   &__card {
     width: auto;
-    height: 622px;
     background-color: $white-text-color;
     text-align: center;
 
@@ -36,6 +35,7 @@
 
     // width: calc((100% - 90px) / 4);
     margin-bottom: 30px;
+    padding-bottom: 24px;
   }
 
   &__name {
@@ -54,6 +54,7 @@
   &__position,
   &__image {
     margin: 0;
+    width: 100%;
     display: block;
     line-height: 1.9;
   }

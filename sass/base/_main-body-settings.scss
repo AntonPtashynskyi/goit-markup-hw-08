@@ -11,16 +11,11 @@
 .container {
   margin-left: auto;
   margin-right: auto;
-  // width: 1200px;
-  width: 480px;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
   outline: 0px solid tomato;
 }
-
-// .section {
-//   padding: 94px 0;
-// }
 
 .section-tittle {
   color: $tittle-text-color;
