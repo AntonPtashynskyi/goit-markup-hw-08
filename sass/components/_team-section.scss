@@ -22,8 +22,6 @@
 .team-list {
   @extend %list;
 
-  // display: flex;
-
   &__card {
     width: auto;
     background-color: $white-text-color;
@@ -33,7 +31,6 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
 
-    // width: calc((100% - 90px) / 4);
     margin-bottom: 30px;
     padding-bottom: 24px;
   }
@@ -59,10 +56,6 @@
     line-height: 1.9;
   }
 }
-
-// .team-list__card:not(:last-child) {
-//   margin-right: 30px;
-// }
 
 .team-social-list {
   @extend %list;
@@ -113,5 +106,23 @@
     &__card:nth-child(odd) {
       margin-right: 30px;
     }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .team-section__container {
+    padding: 94px 0;
+  }
+
+  .team-list {
+    display: flex;
+
+    &__card {
+      width: calc((100% - 90px) / 4);
+    }
+  }
+
+  .team-list__card:not(:last-child) {
+    margin-right: 30px;
   }
 }

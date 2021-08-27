@@ -4,9 +4,6 @@
   flex-direction: column;
   justify-content: center;
 
-  // padding: 118px 0;
-  // max-width: 1600px;
-
   height: 400px;
   max-width: 1600px;
   margin-left: auto;
@@ -51,5 +48,17 @@
   &:focus {
     background-color: $accent-button-color;
     box-shadow: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-section {
+    height: 600px;
+    padding: 118px 0;
+
+    &__text {
+      font-size: 44px;
+      max-width: 696px;
+    }
   }
 }

@@ -57,15 +57,6 @@
   margin-right: 30px;
 }
 
-//   &:nth-child(5) {
-//     margin-bottom: 0px;
-//   }
-// }
-
-// .customers-list__unit:not(:last-child) {
-//   margin-right: 30px;
-// }
-
 @media screen and (min-width: $tablet) {
   .customers-list__unit {
     margin-right: 30px;
@@ -76,6 +67,21 @@
   }
 
   .customers-list__unit:nth-child(4n) {
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .customers-list {
+    &__unit {
+      width: 170px;
+    }
+  }
+
+  .customers-list__unit:not(:last-child) {
+    margin-right: 30px;
+  }
+  .customers-list__unit:nth-child(-n + 4) {
     margin-bottom: 0;
   }
 }

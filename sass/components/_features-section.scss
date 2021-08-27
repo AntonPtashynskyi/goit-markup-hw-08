@@ -6,16 +6,6 @@
 .features-list {
   @extend %list;
 
-  // display: flex;
-
-  // &__item {
-  //   width: calc((100% - 90px) / 4);
-  // }
-
-  // &__item:not(:last-child) {
-  //   margin-right: 30px;
-  // }
-
   &__title {
     color: $title-text-color;
 
@@ -60,6 +50,24 @@
     }
 
     &__item:nth-child(odd) {
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .features {
+    padding: 94px 0;
+  }
+
+  .features-list {
+    display: flex;
+
+    &__item {
+      width: calc((100% - 90px) / 4);
+    }
+
+    &__item:not(:last-child) {
       margin-right: 30px;
     }
   }
