@@ -1,20 +1,20 @@
-.main-nav__menu-btn {
+.navigation__menu-btn {
   background-color: transparent;
   border: none;
   margin: 0 15px 0 0;
   padding: 0;
 
-  &.is-open .main-nav__menu-icon {
+  &.is-open .navigation__menu-icon {
     display: none;
   }
 }
 
-.main-nav__menu-icon {
+.navigation__menu-icon {
   display: block;
   transition: fill 250ms $main-transition-time;
 
-  .main-nav__menu-btn:hover &,
-  .main-nav__menu-btn:focus & {
+  .navigation__menu-btn:hover &,
+  .navigation__menu-btn:focus & {
     fill: $main-button-color;
   }
 }
@@ -23,11 +23,8 @@
   transform: translateX(0);
 }
 
-@media screen and (max-width: 480px) {
-  font-size: 18px;
-}
-
 .mobile-menu {
+  z-index: 999;
   position: fixed;
   top: 0;
   left: 0;
@@ -66,12 +63,16 @@
     line-height: 1.17;
     text-align: center;
     letter-spacing: 0.02em;
-    color: $tittle-text-color;
+    color: $title-text-color;
     text-decoration: none;
     transition: color 250ms $main-transition-time;
 
     &:hover,
     &focus {
+      color: $accent-text-color;
+    }
+
+    &--accent {
       color: $accent-text-color;
     }
   }
@@ -83,7 +84,7 @@
     letter-spacing: 0.02em;
     text-decoration: none;
 
-    color: $primery-text-color;
+    color: $primary-text-color;
 
     &--bold {
       font-weight: 500;
@@ -134,5 +135,15 @@
 
   &:not(:last-child) {
     border-right: 1px solid rgba(33, 33, 33, 0.2);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .mobile-menu {
+    display: none;
+  }
+
+  .navigation__menu-btn {
+    display: none;
   }
 }

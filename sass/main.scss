@@ -1,20 +1,15 @@
 @import "./utils/variables";
-@import "./base/normalize";
 @import "./utils/placeholders";
 @import "./base/main-body-settings";
 
 // Main page
 
 // Header
-@import "./components/page-header";
-@import "./components/main-nav";
-@import "./components/logo-header";
-@import "./components/contact-header";
-@import "./components/mobile-menu";
+@import "./components/header";
+@import "./components/header-side-menu";
 
 // Hero section
-@import "./components/main-section";
-@import "./components/primery-button";
+@import "./components/hero-section";
 
 // Features section
 @import "./components/features-section";
@@ -22,29 +17,20 @@
 // About us section
 @import "./components/about-us-section";
 
-// Out team
-@import "./components/our-team-members";
-@import "./components/our-team-social-media";
+// Team section
+@import "./components/team-section";
 
 // Custumers
-@import "./components/customers";
+@import "./components/customers-section";
 
 // Footer
 @import "./components/footer";
-@import "./components/footer-contact";
-@import "./components/footer-social-link";
-@import "./components/footer-subscribe";
 
 // Back-drop
 @import "./components/back-drop";
 
 // Modal
 @import "./components/modal-form";
-@import "./components/modal-form-field";
-@import "./components/agreement-form";
-@import "./components/modal-send-btn";
 
 // *** Portfolio page ***
-@import "./components/filtr-btn-portfolio";
-@import "./components/portfolio-list";
-@import "./components/portfolio-card";
+@import "./components/portfolio-section";

@@ -20,15 +20,34 @@
   <body>
     <!-- Header -->
     <header class="page-header">
-      <div class="main-nav">
+      <div class="navigation container">
         <a href="index.html" class="logo">
           <span class="logo--accent">Web</span>Studio
         </a>
+        <button
+          type="button"
+          class="navigation__menu-btn js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="40"
+            height="40"
+            aria-label="Кнопка открытия мобильного меню"
+          >
+            <use
+              class="navigation__menu-icon"
+              href="./images/symbol-defs.svg#menu-icon"
+            ></use>
+          </svg>
+        </button>
         <!-- Navigation bar -->
         <nav>
           <ul class="site-nav">
             <li class="site-nav__item">
-              <a class="site-nav__link" href="./index.html">Студия</a>
+              <a class="site-nav__link site-nav__link" href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="site-nav__item">
               <a
@@ -64,37 +83,94 @@
         </ul>
       </div>
     </header>
+    <div class="mobile-menu js-menu-container container" id="mobile-menu">
+      <button class="mobile-menu__close-btn js-close-menu">
+        <svg
+          width="40"
+          height="40"
+          aria-label="Кнопка закрытия мобильного меню"
+        >
+          <use
+            class="mobile-menu__close-icon"
+            href="./images/symbol-defs.svg#big-close-icon"
+          ></use>
+        </svg>
+      </button>
+      <ul class="mobile-menu__page-links list">
+        <li class="mobile-menu__link-item">
+          <a class="mobile-menu__link" href="./index.html">Студия</a>
+        </li>
+        <li class="mobile-menu__link-item">
+          <a
+            class="mobile-menu__link mobile-menu__link--accent"
+            href="./portfolio.html"
+            >Портфолио</a
+          >
+        </li>
+        <li class="mobile-menu__link-item">
+          <a class="mobile-menu__link" href="#">Контакты</a>
+        </li>
+      </ul>
+      <ul class="mobile-menu__contact-list list">
+        <li class="mobile-menu__contact-item">
+          <a class="mobile-menu__contact--bold" href="tel:+380961111111"
+            >+38 096 111 11 11</a
+          >
+        </li>
+        <li class="mobile-menu__contact-item">
+          <a class="mobile-menu__contact" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+      <ul class="mobile-menu__social-list list">
+        <li class="mobile-menu__social">
+          <a class="mobile-menu__social-link" href="#">Instagram</a>
+        </li>
+        <li class="mobile-menu__social">
+          <a class="mobile-menu__social-link" href="#">Twitter</a>
+        </li>
+        <li class="mobile-menu__social">
+          <a class="mobile-menu__social-link" href="#">Facebook</a>
+        </li>
+        <li class="mobile-menu__social">
+          <a class="mobile-menu__social-link" href="#">LinkIn</a>
+        </li>
+      </ul>
+    </div>
 
     <!-- Main Content -->
     <main>
       <!-- Portfolio list-->
       <section class="portfolio-section section">
-        <!-- Filtr -->
+        <!-- filter -->
         <div class="container">
-          <ul class="filtr-list">
-            <li class="filtr-list__item">
-              <button class="filtr-list__button" type="button">Все</button>
+          <ul class="filter-list">
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">Все</button>
             </li>
-            <li class="filtr-list__item">
-              <button class="filtr-list__button" type="button">Веб-сайт</button>
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">
+                Веб-сайт
+              </button>
             </li>
-            <li class="filtr-list__item">
-              <button class="filtr-list__button" type="button">
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">
                 Приложение
               </button>
             </li>
-            <li class="filtr-list__item">
-              <button class="filtr-list__button" type="button">Дизайн</button>
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">Дизайн</button>
             </li>
-            <li class="filtr-list__item">
-              <button class="filtr-list__button" type="button">
+            <li class="filter-list__item">
+              <button class="filter-list__button" type="button">
                 Маркетинг
               </button>
             </li>
           </ul>
 
           <!-- Portfolio card -->
-          <h1 class="portfolio-tittle">Portfolio</h1>
+          <h1 class="portfolio-title">Портфолио</h1>
           <ul class="portfolio-list list">
             <li class="portfolio-list__card list-card">
               <a href="#" class="list-card__link">
@@ -102,8 +178,6 @@
                   <img
                     src="images/portfolio-techno-crack.jpg"
                     alt="ноутбук с открытым сайтом"
-                    width="370"
-                    height="294"
                     class="list-card__img"
                   />
                   <p class="list-card__overlay">
@@ -113,7 +187,7 @@
                   </p>
                 </div>
                 <div class="list-card__dscr">
-                  <h3 class="list-card__project-tittle">Технокряк</h3>
+                  <h3 class="list-card__project-title">Технокряк</h3>
                   <p class="list-card__project-dscr">Веб-сайт</p>
                 </div>
               </a>
@@ -124,8 +198,6 @@
                   <img
                     src="images/portfolio-new-orlean-vs-golden-star.jpg"
                     alt="два игрока играют в баскетболл"
-                    width="370"
-                    height="294"
                     class="list-card__img"
                   />
                   <p class="list-card__overlay">
@@ -135,7 +207,7 @@
                   </p>
                 </div>
                 <div class="list-card__dscr">
-                  <h3 class="list-card__project-tittle">
+                  <h3 class="list-card__project-title">
                     Постер New Orlean vs Golden Star
                   </h3>
                   <p class="list-card__project-dscr">Дизайн</p>
@@ -148,8 +220,6 @@
                   <img
                     src="images/portfolio-seefood.jpg"
                     alt="логотип ресторана SeaFood"
-                    width="370"
-                    height="294"
                     class="list-card__img"
                   />
                   <p class="list-card__overlay">
@@ -159,7 +229,7 @@
                   </p>
                 </div>
                 <div class="list-card__dscr">
-                  <h3 class="list-card__project-tittle">Ресторан SeaFood</h3>
+                  <h3 class="list-card__project-title">Ресторан SeaFood</h3>
                   <p class="list-card__project-dscr">Приложение</p>
                 </div>
               </a>
@@ -170,8 +240,6 @@
                   <img
                     src="images/portfolio-project-prime.jpg"
                     alt="большине наушники с дугой"
-                    width="370"
-                    height="294"
                     class="list-card__img"
                   />
                   <p class="list-card__overlay">
@@ -181,7 +249,7 @@
                   </p>
                 </div>
                 <div class="list-card__dscr">
-                  <h3 class="list-card__project-tittle">Проект Prime</h3>
+                  <h3 class="list-card__project-title">Проект Prime</h3>
                   <p class="list-card__project-dscr">Маркетинг</p>
                 </div>
               </a>
@@ -192,8 +260,6 @@
                   <img
                     src="images/portfolio-project-box.jpg"
                     alt="две короби, белагя и серая"
-                    width="370"
-                    height="294"
                     class="list-card__img"
                   />
                   <p class="list-card__overlay">
@@ -203,7 +269,7 @@
                   </p>
                 </div>
                 <div class="list-card__dscr">
-                  <h3 class="list-card__project-tittle">Проект Boxes</h3>
+                  <h3 class="list-card__project-title">Проект Boxes</h3>
                   <p class="list-card__project-dscr">Приложение</p>
                 </div>
               </a>
@@ -214,8 +280,6 @@
                   <img
                     src="images/portfolio-inspiration-has-no-border.jpg"
                     alt="большой монитор"
-                    width="370"
-                    height="294"
                     class="list-card__img"
                   />
                   <p class="list-card__overlay">
@@ -225,7 +289,7 @@
                   </p>
                 </div>
                 <div class="list-card__dscr">
-                  <h3 class="list-card__project-tittle">
+                  <h3 class="list-card__project-title">
                     Inspiration has no Borders
                   </h3>
                   <p class="list-card__project-dscr">Веб-сайт</p>
@@ -238,8 +302,6 @@
                   <img
                     src="images/portfolio-limited-edition.jpg"
                     alt="открытая книга"
-                    width="370"
-                    height="294"
                     class="list-card__img"
                   />
                   <p class="list-card__overlay">
@@ -249,7 +311,7 @@
                   </p>
                 </div>
                 <div class="list-card__dscr">
-                  <h3 class="list-card__project-tittle">
+                  <h3 class="list-card__project-title">
                     Издание Limited Edition
                   </h3>
                   <p class="list-card__project-dscr">Дизайн</p>
@@ -262,8 +324,6 @@
                   <img
                     src="images/portfolio-project-lab.jpg"
                     alt="лейба повешеная на нить"
-                    width="370"
-                    height="294"
                     class="list-card__img"
                   />
                   <p class="list-card__overlay">
@@ -273,7 +333,7 @@
                   </p>
                 </div>
                 <div class="list-card__dscr">
-                  <h3 class="list-card__project-tittle">Проект LAB</h3>
+                  <h3 class="list-card__project-title">Проект LAB</h3>
                   <p class="list-card__project-dscr">Маркетинг</p>
                 </div>
               </a>
@@ -284,8 +344,6 @@
                   <img
                     src="images/portfolio-growing-business.jpg"
                     alt="человек печатает на ноутбуке"
-                    width="370"
-                    height="294"
                     class="list-card__img"
                   />
                   <p class="list-card__overlay">
@@ -295,7 +353,7 @@
                   </p>
                 </div>
                 <div class="list-card__dscr">
-                  <h3 class="list-card__project-tittle">Growing Business</h3>
+                  <h3 class="list-card__project-title">Growing Business</h3>
                   <p class="list-card__project-dscr">Приложение</p>
                 </div>
               </a>
@@ -312,8 +370,8 @@
           <a href="index.html" class="logo-footer"
             ><span class="logo-footer--accent">Web</span>Studio
           </a>
-          <address class="adress">
-            <p class="adress__company">г. Киев, пр-т Леси Украинки, 26</p>
+          <address class="address">
+            <p class="address__company">г. Киев, пр-т Леси Украинки, 26</p>
           </address>
           <ul class="company-contacts contact list">
             <li class="company-contacts__item">
@@ -330,7 +388,7 @@
         </div>
         <!-- Social links -->
         <div class="social-block">
-          <p class="social-block__tittle">Присоидняйтесь</p>
+          <p class="social-block__title">Присоидняйтесь</p>
           <ul class="company-links">
             <li class="company-links__item">
               <a href="#" class="company-links__social">
@@ -364,7 +422,7 @@
         </div>
         <!-- Footer Subscribe-block -->
         <div class="subscribe-block">
-          <p class="subscribe-block__tittle">Подпишитесь на рассылку</p>
+          <p class="subscribe-block__title">Подпишитесь на рассылку</p>
           <form class="subscribe-form">
             <input
               type="email"
@@ -383,5 +441,15 @@
         </div>
       </div>
     </footer>
+
+    <!-- JS -->
+    <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

@@ -1,5 +1,5 @@
 .body {
-  color: $primery-text-color;
+  color: $primary-text-color;
   font-family: $main-font;
   letter-spacing: 0.03em;
   font-weight: 400;
@@ -17,8 +17,14 @@
   outline: 0px solid tomato;
 }
 
-.section-tittle {
-  color: $tittle-text-color;
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+.section-title {
+  color: $title-text-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.16;
@@ -27,8 +33,8 @@
   text-transform: uppercase;
 }
 
-.main-section-tittle {
-  color: $tittle-text-color;
+.main-section-title {
+  color: $title-text-color;
   font-weight: 700;
   font-size: 28px;
   line-height: 1.17;

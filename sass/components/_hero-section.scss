@@ -1,13 +1,14 @@
-.main-section {
+.hero-section {
   background-color: $hero-bgc;
-  display: block;
-}
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 
-.main-section {
-  padding: 118px 0;
+  // padding: 118px 0;
   // max-width: 1600px;
-  max-width: 480px;
+
   height: 400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: linear-gradient(
@@ -22,7 +23,7 @@
   background-size: cover;
 }
 
-.main-section__text {
+.hero-section__text {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
@@ -41,4 +42,14 @@
 
 .features.section {
   padding-bottom: 0;
+}
+
+.hero-section__button {
+  @extend %action-btn;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-button-color;
+    box-shadow: none;
+  }
 }
