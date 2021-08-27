@@ -71,6 +71,10 @@
   font-style: normal;
 }
 
+.container-mobile {
+  max-width: 768px;
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
