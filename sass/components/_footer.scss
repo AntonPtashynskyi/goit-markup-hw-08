@@ -221,4 +221,42 @@
   .subscribe-form__mail-input {
     width: 450px;
   }
+
+  .company-contacts__item {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .logo-footer {
+    font-size: 26px;
+  }
+
+  .contact-block {
+    align-items: normal;
+    margin-bottom: 0;
+  }
+
+  .social-block {
+    margin-bottom: 0;
+    margin-left: 70px;
+    text-align: start;
+  }
+
+  .subscribe-block {
+    margin-left: 93px;
+    display: block;
+    text-align: start;
+  }
+
+  .subscribe-form {
+    flex-direction: row;
+    align-items: normal;
+
+    &__mail-input {
+      max-width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
+  }
 }

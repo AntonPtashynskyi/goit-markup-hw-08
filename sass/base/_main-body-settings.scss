@@ -1,3 +1,7 @@
+.section {
+  padding: 60px 0;
+}
+
 .body {
   color: $primary-text-color;
   font-family: $main-font;
@@ -21,18 +25,6 @@
   outline: 0px solid tomato;
 }
 
-@media screen and (min-width: 768px) {
-  .container {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .container {
-    max-width: 1200px;
-  }
-}
-
 .section-title {
   color: $title-text-color;
   font-weight: 700;
@@ -45,11 +37,29 @@
   margin-bottom: 50px;
 }
 
-@media screen and (min-width: $desktop) {
+@media screen and (min-width: $tablet) {
   .section-title {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 28px;
+    line-height: 1.17;
     text-transform: none;
+  }
+
+  .container {
+    max-width: 768px;
+  }
+  .section {
+    padding: 60px 0;
+  }
+}
+
+@media screen and (min-width: $desktop) {
+  .container {
+    max-width: 1200px;
+  }
+
+  .section-title {
+    font-size: 36px;
   }
 
   .section {

@@ -10,6 +10,7 @@
 
 .site-nav {
   @extend %list;
+  display: flex;
 
   &__link {
     display: block;
@@ -77,6 +78,10 @@
 
   margin-left: auto;
 
+  &__item:first-child {
+    margin-bottom: 10px;
+  }
+
   &__link {
     display: flex;
     align-items: center;
@@ -112,20 +117,6 @@
   .navigation {
     height: 80px;
   }
-
-  .site-nav {
-    display: flex;
-  }
-
-  .contact-header {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-
-    &__item:first-child {
-      margin-bottom: 10px;
-    }
-  }
 }
 
 @media screen and (min-width: $desktop) {
@@ -149,6 +140,7 @@
     &__link {
       padding-top: 32px;
       padding-bottom: 32px;
+      font-size: 14px;
     }
   }
 

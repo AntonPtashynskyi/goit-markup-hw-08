@@ -1,8 +1,3 @@
-.features {
-  @extend %section;
-  padding-bottom: 60px;
-}
-
 .features-list {
   @extend %list;
 
@@ -56,10 +51,6 @@
 }
 
 @media screen and (min-width: $desktop) {
-  .features {
-    padding: 94px 0;
-  }
-
   .features-list {
     display: flex;
 
