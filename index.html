@@ -271,12 +271,28 @@
           <h2 class="section-title">Наша Команда</h2>
           <ul class="team-list">
             <li class="team-list__card">
-              <img
-                srcset="./images/igor-mob.jpg 1x, ./images/igor-mob@2x.jpg 2x"
-                src="./images/igor-mob.jpg"
-                alt="Игорь Демьяненко - Product Designer"
-                class="team-list__image"
-              />
+              <picture>
+                <source
+                  srcset="./images/igor-mob.jpg 1x, ./images/igor-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/igor-tab.jpg 1x, ./images/igor-tab@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/igor-desk.jpg    1x,
+                    ./images/igor-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/igor-tab.jpg"
+                  alt="Игорь Демьяненко - Product Designer"
+                  class="team-list__image"
+                />
+              </picture>
               <div class="team-list__desc">
                 <h3 class="team-list__name">Игорь Демьяненко</h3>
                 <p class="team-list__position">Product Designer</p>
@@ -332,12 +348,28 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                srcset="./images/olga-mob.jpg 1x, ./images/olga-mob@2x.jpg 2x"
-                src="./images/olga-mob.jpg"
-                alt="Ольга Репина - Frontend Developer"
-                class="team-list__image"
-              />
+              <picture>
+                <source
+                  srcset="./images/olga-mob.jpg 1x, ./images/olga-mob@2x.jpg 2x"
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="./images/olga-tab.jpg 1x, ./images/olga-tab@2x.jpg 2x"
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/olga-desk.jpg    1x,
+                    ./images/olga-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/olga-tab.jpg"
+                  alt="Ольга Репина - Frontend Developer"
+                  class="team-list__image"
+                />
+              </picture>
               <div class="team-list__desc">
                 <h3 class="team-list__name">Ольга Репина</h3>
                 <p class="team-list__position">Frontend Developer</p>
@@ -393,15 +425,34 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                srcset="
-                  ./images/nikolas-mob.jpg    1x,
-                  ./images/nikolas-mob@2x.jpg 2x
-                "
-                src="./images/nikolas-mob.jpg"
-                alt="Николай Тарасов - Marketingp"
-                class="team-list__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/nikolas-mob.jpg    1x,
+                    ./images/nikolas-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/nikolas-tab.jpg    1x,
+                    ./images/nikolas-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/nikolas-desk.jpg    1x,
+                    ./images/nikolas-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/nikolas-tab.jpg"
+                  alt="Николай Тарасов - Marketingp"
+                  class="team-list__image"
+                />
+              </picture>
               <div class="team-list__desc">
                 <h3 class="team-list__name">Николай Тарасов</h3>
                 <p class="team-list__position">Marketingp</p>
@@ -457,15 +508,34 @@
               </div>
             </li>
             <li class="team-list__card">
-              <img
-                srcset="
-                  ./images/michail-mob.jpg    1x,
-                  ./images/michail-mob@2x.jpg 2x
-                "
-                src="./images/michail-mob.jpg"
-                alt="Михаил Ермаков - UI Designer"
-                class="team-list__image"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/michail-mob.jpg    1x,
+                    ./images/michail-mob@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    ./images/michail-tab.jpg    1x,
+                    ./images/michail-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px) and (max-width: 1199px)"
+                />
+                <source
+                  srcset="
+                    ./images/michail-desk.jpg    1x,
+                    ./images/michail-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/michail-tab.jpg"
+                  alt="Михаил Ермаков - UI Designer"
+                  class="team-list__image"
+                />
+              </picture>
               <div class="team-list__desc">
                 <h3 class="team-list__name">Михаил Ермаков</h3>
                 <p class="team-list__position">UI Designer</p>
