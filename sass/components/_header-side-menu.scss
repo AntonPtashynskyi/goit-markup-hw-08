@@ -89,7 +89,7 @@
     &--bold {
       font-weight: 500;
       font-size: 34px;
-      line-height: 1.17px;
+      line-height: 1.17;
       letter-spacing: 0.02em;
       color: $accent-text-color;
       text-decoration: inherit;
@@ -108,7 +108,7 @@
 }
 
 .mobile-menu__page-links {
-  margin-bottom: 270px;
+  margin-bottom: auto;
 }
 
 .mobile-menu__link-item:not(:last-child) {

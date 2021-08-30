@@ -30,9 +30,10 @@
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
+  }
 
-    margin-bottom: 30px;
-    padding-bottom: 24px;
+  &__card:not(:first-child) {
+    margin-top: 30px;
   }
 
   &__name {
@@ -46,6 +47,7 @@
 
   &__desc {
     padding-top: 30px;
+    padding-bottom: 24px;
   }
 
   &__position,
@@ -106,6 +108,10 @@
     &__card:nth-child(odd) {
       margin-right: 30px;
     }
+
+    &__card:nth-child(-n + 2) {
+      margin-top: 0;
+    }
   }
 }
 
@@ -115,6 +121,9 @@
 
     &__card {
       width: calc((100% - 90px) / 4);
+    }
+    &__card:nth-child(n + 3) {
+      margin-top: 0;
     }
   }
 

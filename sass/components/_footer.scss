@@ -206,11 +206,8 @@
 @media screen and (min-width: $tablet) {
   .footer-container {
     flex-direction: row;
-    justify-content: center;
-  }
-
-  .social-block {
-    margin-left: 165px;
+    justify-content: space-around;
+    align-items: baseline;
   }
 
   .subscribe-form {
@@ -239,12 +236,12 @@
 
   .social-block {
     margin-bottom: 0;
-    margin-left: 70px;
+    margin-left: auto;
     text-align: start;
   }
 
   .subscribe-block {
-    margin-left: 93px;
+    margin-left: auto;
     display: block;
     text-align: start;
   }

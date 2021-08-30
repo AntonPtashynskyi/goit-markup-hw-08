@@ -61,6 +61,9 @@
 
   &__card {
     max-width: 450px;
+  }
+
+  &__card:not(:last-child) {
     margin-bottom: 30px;
   }
 }

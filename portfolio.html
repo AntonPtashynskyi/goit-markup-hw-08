@@ -526,15 +526,34 @@
             <li class="portfolio-list__card list-card">
               <a href="#" class="list-card__link">
                 <div class="list-card__thumb">
-                  <img
-                    srcset="
-                      ./images/growin-tab.jpg    1x,
-                      ./images/growin-tab@2x.jpg 2x
-                    "
-                    src="./images/growin-tab.jpg"
-                    alt="человек печатает на ноутбуке"
-                    class="list-card__img"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/growin-mob.jpg    1x,
+                        ./images/growin-mob@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/growin-tab.jpg    1x,
+                        ./images/growin-tab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px) and (max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/growin-desk.jpg    1x,
+                        ./images/growin-desk@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <img
+                      src="./images/growin-tab.jpg"
+                      alt="человек печатает на ноутбуке"
+                      class="list-card__img"
+                    />
+                  </picture>
                   <p class="list-card__overlay">
                     Технокряк это современная площадка распространения
                     коронавируса. Компании используют эту платформу для
